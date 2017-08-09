@@ -17,7 +17,7 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 300px;
 }
 
 .bolder{
@@ -25,5 +25,5 @@ body {
 }
 
 .text-small{
-    font-size: 50%;
+    font-size: 100%;
 }
