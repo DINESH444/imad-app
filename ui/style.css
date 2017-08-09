@@ -27,3 +27,13 @@ body {
 .text-small{
     font-size: 100%;
 }
+
+.Container{
+                max-width: 800px;
+                margin: 0 auto;
+                color: black;
+                font-family: cursive;
+                padding-top: 60px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
