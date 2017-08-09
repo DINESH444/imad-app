@@ -20,3 +20,10 @@ body {
     height: 200px;
 }
 
+.bolder{
+    font-weight: bolder;
+}
+
+.text-small{
+    font-size: 50%;
+}
