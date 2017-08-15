@@ -31,7 +31,7 @@ var counter= 0;
 var button = document.getElementById("counter");
 
 
-button.oncclick = function(){
+button.oncclick1 = function(){
     
     
     counter= counter + 1;
