@@ -2,9 +2,9 @@ console.log('Loaded!');
 
 alert("hai");
 
-var element = document.getElementById('main-text')
+//var element = document.getElementById('main-text')
 
-element.innerHTML = 'New Value'
+//element.innerHTML = 'New Value'
 
 //move the image
 
