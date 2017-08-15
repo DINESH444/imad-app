@@ -1,4 +1,4 @@
-/*console.log('Loaded!');
+console.log('Loaded!');
 
 alert("hai");
 
@@ -21,7 +21,7 @@ img.onclick=function(){
     var interval = setInterval(moveRight,10);
    // img.style.marginLeft= '100px';
 }
-*/
+
 
 
 //Counter code
@@ -34,7 +34,9 @@ button.oncclick = function(){
     
     
     counter= counter + 1;
+     
     var span = document.getElementById('count');
+    
     span.innerHTML = counter.toString();
     
 }
