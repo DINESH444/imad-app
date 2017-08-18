@@ -84,6 +84,66 @@ request.send(null);
 
     
 };
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+var button = document.getElementById("counter1");
+
+
+button.onclick = function(){
+    
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function(){
+        
+        if (request.readystate === XMLHttpRequest.Done){
+            
+            if(request.status === 200){
+                var counter1 = request.responseText;
+                var span = document.getElementById('count1');
+                span.innerHTML = counter1.toString();
+            }
+        }
+    }
+     
+request.open('GET','http://dineshmanikantatimothiraju58.imad.hasura-app.io/commentone',true);
+request.send(null);
+    
+}
+
+//submit name
+
+
+var submit = document.getElementById('submit_btn1');
+submit.onclick = function(){
+    
+    var nameInput = document.getElementById('comment');
+var comment = commentInput.value;
+     var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function(){
+        
+        if (request.readystate === XMLHttpRequest.Done){
+            
+            if(request.status === 200){
+               var comments = request.responseText;
+               comments = JSON.parse(comments);
+                var list = '';
+                for(var i=0; i<comments.length; i++){
+                    list += '<li>'+ comments[i] +'</li>';
+                }
+                
+                var ul=document.getElementById('commentlist');
+                ul.innerHTML = list;
+            }
+        }
+    }
+     
+request.open('GET','http://dineshmanikantatimothiraju58.imad.hasura-app.io/submit-comment?comment=' +comment,true);
+request.send(null);
+
+    
+};
 
 
 
