@@ -1,4 +1,4 @@
-/*console.log('Loaded!');
+console.log('Loaded!');
 
 alert("Welcome to my Web-App");
 
@@ -21,7 +21,6 @@ img.onclick=function(){
     var interval = setInterval(moveRight,10);
    // img.style.marginLeft= '100px';
 }
-*/
 
 
 //Counter code
