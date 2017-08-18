@@ -179,10 +179,10 @@ app.get('/ui/style.css', function (req, res) {
 
 
 var names=[];
-app.get('/submit-name/:name',function(req,res){
+app.get('/submit-name',function(req,res){
     var name = req.params.name;
     names.push(name);
-    res.send(names);
+    res.send(JSON.srtingify(names));
     
 });
 
