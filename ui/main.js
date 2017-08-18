@@ -47,7 +47,7 @@ button.onclick = function(){
         }
     }
      
-request.open('GET','http://dineshmanikantatimothiraju58.imad.hasura-app.io/counter',true);
+request.open('GET','https://dineshmanikantatimothiraju58.imad.hasura-app.io/counter',true);
 request.send(null);
     
 }
