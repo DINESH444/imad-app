@@ -182,7 +182,7 @@ app.get('/submit-name/:name',function(req,res){
     names.push(name);
     res.send(names);
     
-})
+});
 
 app.get('/:articleName',function(req,res){
     var articleName = req.params.articleName;
