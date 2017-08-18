@@ -26,12 +26,12 @@ img.onclick=function(){
 
 //Counter code
 
-var counter= 0;
+//var counter= 0;
 
 var button = document.getElementById("counter");
 
 
-button.oncclick1 = function(){
+button.onclick = function(){
     
     var request = new XMLHttpRequest();
     
