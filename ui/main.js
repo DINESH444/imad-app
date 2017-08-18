@@ -8,7 +8,7 @@ alert("Welcome to my Web-App");
 
 //move the image
 
-var img = document.getElementById('madi')
+var img = document.getElementById('madi');
 
 var marginLeft= 0;
 
