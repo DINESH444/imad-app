@@ -46,13 +46,16 @@ var Articles = {
                              
                              <hr/>
                              
-                            <div class="footer">
-                                This Button <button id="counter">ClickMe!</button> has been clicked <span id = "count">0</span> times.
+                            <div class="footer1">
+                                If you like my content like me using this button <button id="counter">ClickMe!</button>. <span id = "count1">0</span> and do share your comments below.
+                                
                                 <br/>
-                                <hr/>
-                                <input type="text" id="name" placeholder="name"> </input>
-                                <input type="submit" id="submit_btn" value="submit" ></input>
-                                <ul id="namelist">
+                                <h3 class='Container01>
+                                Comments
+                                </h3>
+                                <input type="text" id="comment" placeholder="comment"> </input>
+                                <input type="submit1" id="submit_btn1" value="submit1" ></input>
+                                <ul id="commentlist">
                                 </ul>
                             </div>
                      </div>`
