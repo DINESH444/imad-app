@@ -31,7 +31,7 @@ img.onclick=function(){
 var button = document.getElementById("counter");
 
 
-button.onclick = function(){
+button.onclick01 = function(){
     
     var request = new XMLHttpRequest();
     
