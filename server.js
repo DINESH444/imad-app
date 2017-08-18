@@ -47,10 +47,10 @@ var Articles = {
                              <hr/>
                              
                             <div class="footer1">
-                                If you like my content like me using this button <button id="counter">ClickMe!</button>. <span id = "count1">0</span> and do share your comments below.
+                                If you like my content like me using this button <button id="counter1">ClickMe!</button>. <span id = "count1">0</span> and do share your comments below.
                                 
                                 <br/>
-                                <h3 class='Container01>
+                                <h3>
                                 Comments
                                 </h3>
                                 <input type="text" id="comment" placeholder="comment"> </input>
