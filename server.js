@@ -7,7 +7,7 @@ var Pool = require('pg').Pool;
 var config = {
     user: 'dineshmanikantatimothiraju58',
     database: 'dineshmanikantatimothiraju58',
-    host: 'http://db.imad.hasura-app.io',
+    host: 'db.imad.hasura-app.io',
     port: '5432',
     password: process.env.DB_PASSWORD
     
@@ -192,7 +192,7 @@ function createTemplate(data){
 var pool = new Pool(config);
 app.get('/test-db', function(req,res){
     
-    pool.query('SELECT * FROM test', function (err,result){
+    pool.query('SELECT * FROM test', function (err, result){
         if (err){
             res.status(500).send(err.toString());
         } else {
