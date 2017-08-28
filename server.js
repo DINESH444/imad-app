@@ -4,6 +4,8 @@ var path = require('path');
 
 var Pool = require('pg').Pool;
 
+var crypto = require('crypto');
+
 var config = {
     user: 'dineshmanikantatimothiraju58',
     database: 'dineshmanikantatimothiraju58',
