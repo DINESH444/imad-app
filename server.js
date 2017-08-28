@@ -56,19 +56,15 @@ function createTemplate(data){
         return htmlTemplate;
 }
 
-function hash(input, salt){
-    var hashed = crypto.pdkdf2sync(input, salt, 10000, 512, 'sha512');
-    return hashed.toString('hex');
-}
-
-
-
 app.get('/hash/:input', function(req,res){
     var hashString = hash(rep.params.input,"this is some random input");
     res.send(hashedString);
 });
 
-
+function hash(input, salt){
+    var hashed = crypto.pdkdf2sync(input, salt, 10000, 512, 'sha512');
+    return hashed.toString('hex');
+}
 
 var pool = new Pool(config);
 app.get('/test-db', function(req,res){
