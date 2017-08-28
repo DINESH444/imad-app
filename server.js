@@ -58,7 +58,7 @@ function createTemplate(data){
 
 
 function hash (input, salt){
-    var hashed = crypto.pdkdfSync(input, salt, 10000, 512, 'sha512');
+    var hashed = crypto.pbkdfSync(input, salt, 10000, 512, 'sha512');
     return hashed.toString('hex');
 }
 
