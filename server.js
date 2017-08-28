@@ -166,3 +166,13 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+
+
+
+
+
+
+
+
+curl -v -XPOST -H 'Content-Type: application/json'  --data '{"username":"dinesh","password":"password"}' http://dineshmanikantatimothiraju58.imad.hasura-app.io/create-user 
