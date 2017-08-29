@@ -5,7 +5,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 
 var crypto = require('crypto');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 
 var config = {
     user: 'dineshmanikantatimothiraju58',
@@ -87,13 +87,13 @@ app.post('/create-user', function(req,res){
     var salt = crypto.randomBytes(128).toString('hex');
     var dbString = hash(password,salt);
     
-    /*pool.query('INSERT INTO "user" (username,password) VALUES ($1, $2)', [username, dbString], funtion(err, result){
+    pool.query('INSERT INTO "user" (username,password) VALUES ($1, $2)', [username, dbString], funtion(err, result){
        if (err){
             res.status(500).send(err.toString());
         } else {
             res.send('User sucessfully created: ' + username);
         }
-    });*/
+    });
         
  });
 
