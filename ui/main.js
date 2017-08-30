@@ -88,11 +88,9 @@ request.send(null);
 
 //submit-login details
 
-var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn2');
 submit.onclick = function(){
-    
-    var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
      var request = new XMLHttpRequest();
     
     request.onreadystatechange = function(){
@@ -100,21 +98,25 @@ var name = nameInput.value;
         if (request.readystate === XMLHttpRequest.Done){
             
             if(request.status === 200){
-               var names = request.responseText;
-               names = JSON.parse(names);
-                var list = '';
-                for(var i=0; i<names.length; i++){
-                    list += '<li>'+ names[i] +'</li>';
-                }
-                
-                var ul=document.getElementById('namelist');
-                ul.innerHTML = list;
+                alert('Logged inn Sucessfully');
+            } else if (request.status === 403){
+                alert('username/password is incorrect');
             }
-        }
-    }
-     
-request.open('GET','http://dineshmanikantatimothiraju58.imad.hasura-app.io/submit-name?name=' +name,true);
-request.send(null);
+             else if(request.status === 500){
+                 alert('Something went wrong with the server');
+             }
+               
+            }
+        };
+    };
+    
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    console.log(username);
+    console.log(password);
+    request.open('POST','http://dineshmanikantatimothiraju58.imad.hasura-app.io/login' ,true);
+    request.setRequestHeader('Content-Type','application/json');
+    request.send(JSON.stringify({username:username, password:password}));
 
     
 };
