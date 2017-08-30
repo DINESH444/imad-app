@@ -21,7 +21,7 @@ submit.onclick = function(){
                
             }
         };
-    };
+};
     
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -30,10 +30,6 @@ submit.onclick = function(){
     request.open('POST', 'http://dineshmanikantatimothiraju58.imad.hasura-app.io/login', true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({"username": username, "password": password}));
-
-
-
-
 
 
 
