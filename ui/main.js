@@ -56,21 +56,21 @@ request.send(null);
 
 //submit-login details
 
-var submit1 = document.getElementById('submit_btn2');
-submit1.onclick = function(){
+var submit = document.getElementById('submit_btn2');
+submit.onclick = function(){
 
-     var request1 = new XMLHttpRequest();
+     var request = new XMLHttpRequest();
     
-    request1.onreadystatechange = function(){
+    request.onreadystatechange = function(){
         
-        if (request1.readystate === XMLHttpRequest.Done){
+        if (request.readystate === XMLHttpRequest.Done){
             
-            if(request1.status === 200){
+            if(request.status === 200){
                 alert('Logged inn Sucessfully');
-            } else if (request1.status === 403){
+            } else if (request.status === 403){
                 alert('username/password is incorrect');
             }
-             else if(request1.status === 500){
+             else if(request.status === 500){
                  alert('Something went wrong with the server');
              }
                
@@ -82,9 +82,9 @@ submit1.onclick = function(){
     var password = document.getElementById('password').value;
     console.log(username);
     console.log(password);
-    request1.open('POST','http://dineshmanikantatimothiraju58.imad.hasura-app.io/login' ,true);
-    request1.setRequestHeader('Content-Type','application/json');
-    request1.send(JSON.stringify({username: username, password: password}));
+    request.open('POST','http://dineshmanikantatimothiraju58.imad.hasura-app.io/login' ,true);
+    request.setRequestHeader('Content-Type','application/json');
+    request.send(JSON.stringify({username: username, password: password}));
 
     
 };
