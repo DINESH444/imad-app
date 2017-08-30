@@ -5,7 +5,7 @@
 
 //submit-login details
 
-var submit = document.getElementById('submit_btn2');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
 
      var request = new XMLHttpRequest();
