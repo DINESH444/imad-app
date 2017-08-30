@@ -1,9 +1,4 @@
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//submit-login details
+ //submit-login details
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
@@ -15,6 +10,7 @@ submit.onclick = function(){
         if (request.readystate === XMLHttpRequest.Done){
             
             if(request.status === 200){
+                console.log('user logged in');
                 alert('Logged inn Sucessfully');
             } else if (request.status === 403){
                 alert('username/password is incorrect');
